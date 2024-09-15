@@ -1,0 +1,151 @@
+* {margin: 2px;}
+
+#menu-toggle {display: none;}
+
+.hamburger {font-size: 30px;
+            display: block;
+            cursor: pointer;
+            color: black;
+            position: absolute;
+            top: 20px; right: 20px;}
+
+#menu-toggle:checked  ~ .flex-nav {display: block;}
+
+.flex-nav ul {list-style: none;
+                padding: 0;
+                margin: 0;}
+
+.flex-nav ul li {padding: 10px; background: #444;}
+
+.flex-nav ul li a {color: white; text-decoration: none;}
+
+img {max-width: 100%;
+    height: auto;
+   object-fit: fill;}
+
+
+#after-img {max-width: 100%;
+            height: 300px;
+            }
+
+h1 {font-size: 80px;
+     color: blue;
+      margin: 0;}
+
+h3 {display: block; background-color: blueviolet; font-weight: bold; font-size: 50px;
+    border-radius: 5px; text-align: center; 
+}
+
+p {font-size: 50px;
+     margin: 0;}
+
+#header {width: 500px;
+     min-height: auto;}
+
+#list {font-size: 40px;}
+
+
+
+a {color: rgba(212, 13, 23, 0.925); 
+    text-decoration: none; 
+    font-weight: bold;
+    font-size: 50px;
+    background-color: rgb(244, 248, 18);}
+
+a:hover {color: rgb(192, 225, 255);
+     text-decoration: solid; }
+
+body { font-size: 24px;
+    color: white; 
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-header { 
+    background-color: rgb(205, 193, 216);
+    padding: 1 rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ }
+
+ .flex-header-content {
+    display: inline-block;
+    text-align: left;
+}
+
+.flex-header p {
+    font-size: 40px;
+    margin: 0;
+}
+
+ .flex-header img {max-width: 100px; height: auto; margin-right: 20px;}
+ 
+ .flex-main {
+    display: flex;
+
+ }
+
+ .flex-nav {
+    background-color: brown;
+    padding-top: 3 rem;
+    display: none;
+    
+ }
+
+ .flex-article {
+    background-color: rgb(129, 243, 172);
+    padding-top: 3 rem;
+ }
+
+ .flex-article img {
+    width: 100%;   /* Force the image to take up the entire width */
+    height: 100%;  /* Stretch it vertically */
+    object-fit: cover; /* Maintain the image's proportion, but cover the entire area */
+}
+
+
+ .flex-aside {
+    .flex-aside {
+        background-color: gray;
+        height: auto;  /* Make height auto so it adjusts to content */
+        padding: 1rem; /* Adjust padding to give some spacing */
+        width: 200px;  /* Specify a width */
+        display: block; /* Ensure it behaves like a block element */
+        margin-top: 2rem; /* Add margin to avoid being flush with the top */
+    }
+    
+ }
+
+ .flex-footer {
+    background-color: blueviolet;
+    padding-top: 3 rem;
+    padding-bottom: 3 rem;
+ }
+
+@media (max-width: 768px) {
+    .flex-header {
+        flex-direction: column; /* Stack header content */
+        align-items: center;
+    }
+
+    .flex-main {
+        flex-direction: column; /* Stack main content and sidebar */
+    }
+
+    .flex-aside {
+        width: 100%; /* Make sidebar take full width on small screens */
+        margin: 0;
+        display: block; /* Keep it visible, but smaller */
+    }
+
+    nav {
+        display: none; /* Hide navigation on small screens */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger menu */
+    }
+}
